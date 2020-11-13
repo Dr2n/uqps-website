@@ -1,0 +1,29 @@
+.hero-section {
+  background-color: gray;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url('https://assets.website-files.com/57371fe8807049795e624240/5737202eeea54c982f2afb84_Mountain.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.hero-section h1 {
+  font-size: 2.6em;
+  font-weight: 400;
+}
+
+.hero-section .buttons {
+  margin-top: 2em;
+}

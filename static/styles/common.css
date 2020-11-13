@@ -1,0 +1,86 @@
+/* Common Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 200;
+  margin: 0.3em 0;
+}
+
+button {
+  padding: 1.6em 2em;
+  background-color: #3f69ee;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.7em;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-right: 1em;
+}
+
+button.inverted {
+  background-color: white;
+  color: #3f69ee;
+}
+
+/* Header */
+header {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  padding: 2em;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+header > .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 940px;
+}
+
+.container > .left {
+  align-self: flex-start;
+  text-transform: uppercase;
+  font-weight: 200;
+  font-size: 1.2em;
+}
+
+.container > .links {
+  display: flex;
+  flex-direction: row;
+}
+
+.container a {
+  text-decoration: none;
+}
+
+header h3 {
+  color: white;
+  font-weight: 200;
+  font-size: 0.7em;
+  text-transform: uppercase;
+  padding: 0em 0.5em;
+  margin: 0;
+}
+
+/* Section */
+.section {
+  min-height: 20vh;
+}
