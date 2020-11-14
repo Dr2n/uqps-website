@@ -4,12 +4,13 @@
   }
 
   .container {
+    width: auto;
     margin-left: 1em;
     margin-right: 1em;
   }
 
   .content-section {
-    padding-top: 2em;
+    padding-top: 3em;
     padding-bottom: 2em;
   }
 
@@ -23,19 +24,19 @@
 
   .hero-section h2 {
     max-width: 70vw;
+    text-align: center;
   }
 
   .hero-container {
-    margin-top: -30em !important;
-    align-items: flex-start !important;
+    margin-top: 0em !important;
+  }
+
+  .about-section {
+    padding-top: 3em !important;
   }
 
   .about-section .about-img {
     margin-right: 1em !important;
-  }
-
-  .about-section .right {
-    margin-top: 1em !important;
   }
 
   .events-container {

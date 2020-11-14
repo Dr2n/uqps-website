@@ -55,8 +55,8 @@ p {
 
 hr {
   width: 100%;
-  border: 0.5px solid white;
-  opacity: 0.087;
+  border: 0.5px solid black;
+  opacity: 0.047;
   margin: 1em 0;
 }
 
@@ -66,6 +66,8 @@ hr {
   flex-wrap: wrap;
   box-sizing: border-box;
   max-width: 940px;
+  margin-left: 2em;
+  margin-right: 2em;
 }
 
 /* Header */
@@ -73,7 +75,7 @@ header {
   position: fixed;
   top: 0;
   width: 100vw;
-  padding: 1.5em 2em 1em 2em;
+  padding: 1.5em 0em;
   color: white;
   display: flex;
   flex-direction: row;
@@ -82,7 +84,7 @@ header {
 }
 
 header .logo {
-  width: 90px;
+  width: 70px;
   filter: invert(1);
   transition: transform 0.2s;
 }
@@ -127,13 +129,6 @@ header h3:hover {
   font-weight: 500;
 }
 
-/* Hero Section */
-.hero-section {
-  min-height: 20vh;
-  display: flex;
-  justify-content: center;
-}
-
 /* Section */
 .content-section {
   min-height: 20vh;
@@ -141,8 +136,8 @@ header h3:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-top: 8em;
-  padding-bottom: 8em;
+  padding-top: 4em;
+  padding-bottom: 4em;
 }
 
 /* Footer Section */
