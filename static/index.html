@@ -8,6 +8,27 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
     <title>UQ Photo Society</title>
 
+    <!-- Scrollbar -->
+    <script>
+        function onScroll(event) {
+            const header = document.querySelector('header');
+            if (document.body.scrollTop > 200) {
+                header.style.color = 'black';
+                header.style.backgroundColor = 'white';
+                Array.from(header.querySelectorAll('h3')).forEach(h3 => h3.style.color = 'black');
+                header.querySelector('.logo').style.filter = 'invert(0)';
+            } else {
+                header.style.color = 'white';
+                header.style.backgroundColor = 'rgba(0, 0, 0, 0)';
+                Array.from(header.querySelectorAll('h3')).forEach(h3 => h3.style.color = 'white');
+                header.querySelector('.logo').style.filter = 'invert(1)';
+            }
+        }
+        window.addEventListener('scroll', onScroll);
+
+
+    </script>
+
 
     <link rel="stylesheet" href="/styles/font.css">
     <link rel="stylesheet" href="/styles/common.css">
@@ -20,7 +41,7 @@
         <div class='container header-container'>
             <div class='left'>
                 <a href='/#'>
-                    <img class='logo' src='/assets/logo.png' />
+                    <img class='logo' src='/assets/logo.svg' />
                 </a>
             </div>
             <div class='links right'>
@@ -71,9 +92,7 @@
         </div>
         <div id='upcoming-events' class='container events-container'>
             <h2>Upcoming Events</h2>
-            <!-- <div class='left'>
-                <p>We run ___, ____ and ___ during semester, and also during holiday breaks.</p>
-            </div> -->
+            <p>There are no upcoming events for now. Follow our Facebook page to be alerted about new events!</p>
             <!-- <div class='right'>
                 <iframe
                     src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FUQPSPhotoSociety%2F&amp;tabs=events&amp;width=500&amp;height=700&amp;small_header=false&amp;adapt_container_width=true&amp;hide_cover=false&amp;show_facepile=true&amp;appId"
@@ -157,8 +176,43 @@
         </div>
     </div>
 
-    <div class='footer-section section'>
+    <div class='footer-section'>
+        <div class='container footer-container'>
+            <img class='logo' src='/assets/logo.svg' />
+            <div class='column-container'>
 
+                <div class='footer-column'>
+                    <h3 class='footer-heading'>
+                        UQ Photo Society
+                    </h3>
+                    <a href='https://uqpsmember.getqpay.com/'>
+                        <p>Become a Member</p>
+                    </a>
+                    <a href='/#about'>
+                        <p>About Us</p>
+                    </a>
+                    <a href='/#events'>
+                        <p>Upcoming Events</p>
+                    </a>
+                    <a href='mailto:uqphotosociety@gmail.com'>
+                        <p>Contact</p>
+                    </a>
+
+                </div>
+                <div class='footer-column'>
+                    <h3 class='footer-heading'>
+                        Follow Us
+                    </h3>
+                    <a href='https://www.facebook.com/UQPSPhotoSociety'>
+                        <p>Facebook</p>
+                    </a>
+                    <a href='https://www.instagram.com/uqpsphotosociety/'>
+                        <p>Instagram</p>
+                    </a>
+                </div>
+            </div>
+            <span>Copyright UQ Photography Society 2020</span>
+        </div>
     </div>
 </body>
 
