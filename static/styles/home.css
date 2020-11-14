@@ -42,6 +42,7 @@
 
 .about-section .right {
   margin-top: 4em;
+  max-width: 450px;
 }
 
 .about-section h2 {

@@ -1,0 +1,40 @@
+@media only screen and (max-width: 600px) {
+  header {
+    display: none;
+  }
+
+  .container {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+  .content-section {
+    padding-top: 2em;
+    padding-bottom: 2em;
+  }
+
+  .hero-section h2 {
+    max-width: 70vw;
+  }
+
+  .hero-container {
+    margin-top: -30em !important;
+    align-items: flex-start !important;
+  }
+
+  .about-section .about-img {
+    margin-right: 1em !important;
+  }
+
+  .about-section .right {
+    margin-top: 1em !important;
+  }
+
+  .footer-section {
+    margin-bottom: 2em;
+  }
+
+  .events-container {
+    margin-top: 1em !important;
+  }
+}
