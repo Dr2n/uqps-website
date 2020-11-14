@@ -65,7 +65,6 @@ hr {
   flex-direction: row;
   flex-wrap: wrap;
   box-sizing: border-box;
-  /* width: 100%; */
   max-width: 940px;
 }
 
@@ -93,6 +92,7 @@ header .logo:hover {
 }
 
 header .header-container {
+  width: 100%;
   justify-content: space-between;
   align-items: center;
 }
@@ -156,6 +156,7 @@ header h3:hover {
 
 .footer-container {
   position: relative;
+  width: 100%;
 }
 
 .footer-container > .logo {

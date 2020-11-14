@@ -13,6 +13,14 @@
     padding-bottom: 2em;
   }
 
+  .footer-section {
+    margin-bottom: 2em;
+  }
+
+  .footer-container {
+    width: auto;
+  }
+
   .hero-section h2 {
     max-width: 70vw;
   }
@@ -28,10 +36,6 @@
 
   .about-section .right {
     margin-top: 1em !important;
-  }
-
-  .footer-section {
-    margin-bottom: 2em;
   }
 
   .events-container {
