@@ -5,6 +5,7 @@
 
   .container {
     width: auto;
+    max-width: 95vw;
     margin-left: 1em;
     margin-right: 1em;
   }
@@ -29,6 +30,10 @@
 
   .hero-container {
     margin-top: 0em !important;
+  }
+
+  .hero-section .welcome-img {
+    width: 100% !important;
   }
 
   .about-section {
