@@ -65,6 +65,7 @@ hr {
   flex-direction: row;
   flex-wrap: wrap;
   box-sizing: border-box;
+  align-items: flex-start;
   max-width: 940px;
   margin-left: 2em;
   margin-right: 2em;
