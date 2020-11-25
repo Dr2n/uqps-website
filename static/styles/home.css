@@ -108,6 +108,7 @@
   transition: transform 0.2s;
   width: 180px;
   max-width: 35vw;
+  z-index: 10;
 }
 
 .exec:hover {
@@ -116,6 +117,7 @@
 
 .profile-container img {
   height: 180px;
+  width: 180px;
   margin-bottom: 0.5em;
 }
 

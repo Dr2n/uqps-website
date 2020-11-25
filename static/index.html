@@ -1,4 +1,4 @@
-<html>
+<html lang="en">
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,30 +8,25 @@
     <meta name="keywords"
         content="uq photography society, uqps, photography society, uq photo society, photo society, uq, uq uqps, queensland, club, events, university of queensland" />
     <meta name="description"
-        content="We are UQPS and focus on all things photography! From overnight trips, day trip, workshops and classes we provide a vast array of events throughout the semester for our members to take part in." />
+        content="We are UQPS and focus on all things photography! From overnight trips, day trips, workshops and classes we provide a vast array of events throughout the semester for our members to take part in." />
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XF5ENP1502"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-XF5ENP1502');
-    </script>
+    <link rel="stylesheet" href="/styles/common.css">
+    <link rel="stylesheet" href="/styles/home.css">
+    <link rel="stylesheet" href="/styles/mobile.css">
 
     <!-- Favicon -->
     <meta name="theme-color" content="#333333" />
     <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico">
 
-    <!-- Includes -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
     <title>UQ Photo Society</title>
 
     <!-- Scrollbar -->
     <script>
         function onScroll(event) {
+            console.log('scroll')
             const header = document.querySelector('header');
+            console.log(header);
+            console.log(document.body.scrollTop)
             if (document.body.scrollTop > 200) {
                 header.style.color = 'black';
                 header.style.backgroundColor = 'white';
@@ -45,28 +40,19 @@
             }
         }
         window.addEventListener('scroll', onScroll);
-
-
     </script>
-
-
-    <link rel="stylesheet" href="/styles/font.css">
-    <link rel="stylesheet" href="/styles/common.css">
-    <link rel="stylesheet" href="/styles/mobile.css">
-    <link rel="stylesheet" href="/styles/home.css">
-
 </head>
 
 <body>
     <header>
         <div class='container header-container'>
             <div class='left'>
-                <a href='/#'>
-                    <img class='logo' src='/assets/logo.svg' />
+                <a href='/'>
+                    <img class='logo' src='/assets/logo.svg' alt="uqps-logo" />
                 </a>
             </div>
             <div class='links right'>
-                <a href='/#'>
+                <a href='/'>
                     <h3>Home</h3>
                 </a>
                 <a href='/#about'>
@@ -91,7 +77,7 @@
         <div class='container hero-container'>
             <h1>WE ARE <b>#UQPS</b></h1>
             <h2>The University of Queensland's Photography Society</h2>
-            <img class='welcome-img' src='/assets/welcome-large.jpg' />
+            <img class='welcome-img' src='/assets/welcome-large.jpg' alt="hero-image" />
             <div class='buttons'>
                 <a class='button' href='https://uqpsmember.getqpay.com/'>Become a Member</a>
                 <a class='button inverted' href='https://www.facebook.com/UQPSPhotoSociety'>Facebook Page</a>
@@ -101,11 +87,11 @@
 
     <div id='about' class='content-section about-section'>
         <div class='container'>
-            <img class='about-img' src="/assets/club-image.jpg" />
+            <img class='about-img' alt="uqps-lightpaint" src="/assets/club-image.jpg" />
             <div class='right'>
                 <h2>We Focus on <i>All Things Photography</i></h2>
 
-                <p>From overnight trips, day trip, workshops and classes we provide a vast array of events throughout
+                <p>From overnight trips, day trips, workshops and classes we provide a vast array of events throughout
                     the semester for our members to take part in. </p>
                 <p>UQPS is part of the UQ Union, the largest student union in Australia.</p>
             </div>
@@ -127,21 +113,21 @@
             <div class='profile-container'>
                 <a href='https://www.instagram.com/yeonghsieh'>
                     <div class='exec'>
-                        <img src='/assets/profile-img/tobi.jpg'>
+                        <img src='/assets/profile-img/tobi.jpg' alt="tobi-profile-picture">
                         <span class='exec-name'>Tobi Hsieh</span>
                         <span class='exec-role'>President</span>
                     </div>
                 </a>
                 <a href='https://www.instagram.com/nthompson_photo'>
                     <div class='exec'>
-                        <img src='/assets/profile-img/nicholas.jpg'>
+                        <img src='/assets/profile-img/nicholas.jpg' alt="nicholas-profile-picture">
                         <span class='exec-name'>Nicholas Thompson</span>
                         <span class='exec-role'>Secretary</span>
                     </div>
                 </a>
                 <a href='https://www.instagram.com/joshwwu'>
                     <div class='exec'>
-                        <img src='/assets/profile-img/joshua.jpg'>
+                        <img src='/assets/profile-img/joshua.jpg' alt="josh-profile-picture">
                         <span class='exec-name'>Joshua Wu</span>
                         <span class='exec-role'>Treasurer</span>
                     </div>
@@ -149,44 +135,40 @@
             </div>
             <hr />
             <div class='profile-container'>
-                <a href='https://www.instagram.com/'>
-                    <div class='exec'>
-                        <img src='/assets/profile-img/lakshya.jpg'>
-                        <span class='exec-name'>Lakshya Awana</span>
-                        <span class='exec-role'>Media Officer</span>
-                    </div>
-                </a>
+                <div class='exec'>
+                    <img src='/assets/profile-img/lakshya.jpg' alt="lakshya-profile-picture">
+                    <span class='exec-name'>Lakshya Awana</span>
+                    <span class='exec-role'>Media Officer</span>
+                </div>
                 <a href='https://www.instagram.com/fu.tographs'>
                     <div class='exec'>
-                        <img src='/assets/profile-img/darren.jpg'>
+                        <img src='/assets/profile-img/darren.jpg' alt="darren-profile-picture">
                         <span class='exec-name'>Darren Fu</span>
                         <span class='exec-role'>Media Officer</span>
                     </div>
                 </a>
-                <a href='https://www.instagram.com/'>
+                <div class='exec'>
+                    <img src='/assets/profile-img/joshua-t.jpg' alt="josh-tai-profile-picture">
+                    <span class='exec-name'>Joshua Tai</span>
+                    <span class='exec-role'>Media Officer</span>
+                </div>
+                <a href='https://www.instagram.com/104.as/'>
                     <div class='exec'>
-                        <img src='/assets/profile-img/joshua-t.jpg'>
-                        <span class='exec-name'>Joshua Tai</span>
-                        <span class='exec-role'>Media Officer</span>
-                    </div>
-                </a>
-                <a href='https://www.instagram.com/'>
-                    <div class='exec'>
-                        <img src='/assets/profile-img/alice.jpg'>
+                        <img src='/assets/profile-img/alice.jpg' alt="alice-profile-picture">
                         <span class='exec-name'>Alice Shang</span>
                         <span class='exec-role'>Event Officer</span>
                     </div>
                 </a>
                 <a href='https://www.instagram.com/samibytheway'>
                     <div class='exec'>
-                        <img src='/assets/profile-img/samantha.jpg'>
+                        <img src='/assets/profile-img/samantha.jpg' alt="samantha-profile-picture">
                         <span class='exec-name'>Samantha Tsung</span>
                         <span class='exec-role'>Event Officer</span>
                     </div>
                 </a>
-                <a href='https://www.instagram.com/'>
+                <a href='https://www.instagram.com/timo04240821/'>
                     <div class='exec'>
-                        <img src='/assets/profile-img/monique.jpg'>
+                        <img src='/assets/profile-img/monique.jpg' alt="monique-profile-picture">
                         <span class='exec-name'>Monique Lin</span>
                         <span class='exec-role'>Event Officer</span>
                     </div>
@@ -198,7 +180,7 @@
 
     <div class='footer-section'>
         <div class='container footer-container'>
-            <img class='logo' src='/assets/logo.svg' />
+            <img class='logo' src='/assets/logo.svg' alt="uqps-logo" />
             <div class='column-container'>
 
                 <div class='footer-column'>
@@ -237,6 +219,22 @@
             <span>Copyright UQ Photography Society 2020</span>
         </div>
     </div>
+
+    <!-- Move head to bottom -->
+    <link rel="stylesheet" href="/styles/font.css">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XF5ENP1502"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-XF5ENP1502');
+    </script>
+
+    <!-- Includes -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 </body>
 
 </html>
