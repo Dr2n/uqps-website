@@ -66,6 +66,7 @@
 
 .about-section {
   padding-top: 9em;
+  padding-bottom: 0;
 }
 
 .about-section .right {
@@ -138,4 +139,13 @@
 /* Events Section */
 .events-container {
   margin-top: 4em;
+  width: 100%;
+}
+
+.facebook-plugin-container {
+  width: 100%;
+  padding-top: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
