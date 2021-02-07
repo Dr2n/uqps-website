@@ -160,6 +160,10 @@
   transform: scale(1.01);
 }
 
+.event:hover h2 {
+  text-decoration: underline;
+}
+
 .event:first-child {
   margin-top: 1rem;
 }
