@@ -6,8 +6,8 @@
   .container {
     width: auto;
     max-width: 95vw;
-    margin-left: 1em;
-    margin-right: 1em;
+    margin-left: 2em;
+    margin-right: 2em;
   }
 
   .content-section {
@@ -46,5 +46,24 @@
 
   .events-container {
     margin-top: 1em !important;
+  }
+
+  .event i {
+    display: none;
+  }
+
+  .exec-container {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+  .exec {
+    width: 35vw;
+  }
+
+  .profile-container img {
+    height: 40vw;
+    width: 40vw;
+    margin-bottom: 0.5em;
   }
 }
