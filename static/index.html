@@ -25,10 +25,7 @@
     <!-- Scrollbar -->
     <script>
         function onScroll(event) {
-            console.log('scroll')
             const header = document.querySelector('header');
-            console.log(header);
-            console.log(document.body.scrollTop)
             if (document.body.scrollTop > 200) {
                 header.style.color = 'black';
                 header.style.backgroundColor = 'white';
