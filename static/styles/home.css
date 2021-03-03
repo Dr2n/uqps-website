@@ -156,6 +156,10 @@
   position: relative;
 }
 
+.event.inactive {
+  pointer-events: none;
+}
+
 .event:hover {
   transform: scale(1.01);
 }
