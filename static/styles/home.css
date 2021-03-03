@@ -160,6 +160,10 @@
   pointer-events: none;
 }
 
+.event.inactive i {
+  display: none;
+}
+
 .event:hover {
   transform: scale(1.01);
 }
