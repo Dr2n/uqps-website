@@ -41,6 +41,37 @@
 .hero-section .welcome-img {
   margin-top: 2em;
   max-height: 50vh;
+  aspect-ratio: 1.5;
+  background-size: cover;
+  transition: background-image 0.6s ease-out;
+  height: 50vh;
+  position: relative;
+}
+
+.hero-section .carousel-button {
+  width: 120px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  transition: opacity 0.2s ease-out;
+  background-image: url('/assets/arrow-left.svg');
+  background-size: 30px;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 10px;
+  opacity: 0;
+}
+
+.hero-section .carousel-button:hover {
+  opacity: 0.5;
+}
+
+.hero-section .carousel-button.next {
+  left: unset;
+  right: 0;
+  transform: scaleX(-1);
 }
 
 /* About section */

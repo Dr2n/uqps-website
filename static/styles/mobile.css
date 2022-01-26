@@ -34,6 +34,12 @@
 
   .hero-section .welcome-img {
     width: 100% !important;
+    height: unset;
+  }
+
+  .hero-section .carousel-button {
+    opacity: 0.5 !important;
+    background-size: 20px;
   }
 
   .about-section {

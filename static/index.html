@@ -38,7 +38,44 @@
                 header.querySelector('.logo').style.filter = 'invert(1)';
             }
         }
+
+        function changeCover(forwards = true) {
+            const increment = forwards ? 1 : -1;
+            const images = [
+                '/assets/welcome-a.jpg',
+                '/assets/welcome-b.jpg',
+                '/assets/welcome-c.jpg',
+                '/assets/welcome-d.jpg',
+            ];
+
+            const elem = document.querySelector('div.welcome-img');
+            
+            const image = elem.style.backgroundImage;
+            const idx = images.findIndex(i => image.includes(i));
+            
+            let newIdx = (idx + increment) % images.length;
+            if (newIdx < 0) {
+                newIdx = images.length - 1;
+            }
+
+            elem.setAttribute('style', 
+                `background-image: url(${images[newIdx]})`
+            );
+
+            clearTimeout(window.changePicture);
+            window.changePicture = setTimeout(changeCover, 2000);    
+        }
+
         window.addEventListener('scroll', onScroll);
+    
+        window.addEventListener('load', () => {
+            window.changePicture = setTimeout(changeCover, 2000);
+            document.querySelector('.carousel-button.next')
+                .addEventListener('click', changeCover);
+            document.querySelector('.carousel-button.prev')
+                .addEventListener('click', () => changeCover(false));
+        });
+
     </script>
 </head>
 
@@ -76,7 +113,9 @@
         <div class='container hero-container'>
             <h1>WE ARE <b>#UQPS</b></h1>
             <h2>The University of Queensland's Photography Society</h2>
-            <img class='welcome-img' src='/assets/welcome-large.jpg' alt="hero-image" />
+            <div class='welcome-img' style="background-image: url('/assets/welcome-a.jpg')" alt="hero-image">
+                <div class='carousel-button prev'></div>
+                <div class='carousel-button next'></div></div>
             <div class='buttons'>
                 <a class='button' href='https://uqpsmember.getqpay.com/'>Become a Member</a>
                 <a class='button inverted' href='https://www.facebook.com/UQPSPhotoSociety'>Facebook Page</a>
