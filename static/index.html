@@ -47,6 +47,8 @@
       }
 
       function changeCover(forwards = true) {
+        clearTimeout(window.changePicture);
+        
         const images = window.images;
         const increment = forwards ? 1 : -1;
         const elem = document.querySelector("div.welcome-img");
@@ -69,7 +71,6 @@
             `background-image: url(${images[newIdx % images.length]})`
           );
 
-          clearTimeout(window.changePicture);
           window.changePicture = setTimeout(changeCover, 1500);
         };
         img.src = imgPath;
